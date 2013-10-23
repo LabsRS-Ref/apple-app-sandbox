@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.application-identifier</key>
+	<string>F9L2L89K5X.com.apple.Aperture</string>
+	<key>com.apple.private.icloud-account-access</key>
+	<true/>
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
+	<key>com.apple.security.assets.movies.read-write</key>
+	<true/>
+	<key>com.apple.security.assets.music.read-only</key>
+	<true/>
+	<key>com.apple.security.assets.pictures.read-write</key>
+	<true/>
+	<key>com.apple.security.files.user-selected.read-write</key>
+	<true/>
+	<key>com.apple.security.library-repair.extensions</key>
+	<array>
+		<string>photolibrary</string>
+		<string>aplibrary</string>
+		<string>apvault</string>
+	</array>
+	<key>com.apple.security.library-repair.ostype</key>
+	<array>
+		<string>iPlb</string>
+	</array>
+	<key>com.apple.security.network.client</key>
+	<true/>
+	<key>com.apple.security.network.server</key>
+	<true/>
+	<key>com.apple.security.personal-information.addressbook</key>
+	<true/>
+	<key>com.apple.security.print</key>
+	<true/>
+	<key>com.apple.security.temporary-exception.apple-events</key>
+	<array>
+		<string>com.apple.mail</string>
+		<string>com.apple.itunes</string>
+		<string>com.microsoft.outlook</string>
+	</array>
+	<key>com.apple.security.temporary-exception.files.absolute-path.read-write</key>
+	<string>/</string>
+	<key>com.apple.security.temporary-exception.mach-lookup.global-name</key>
+	<array>
+		<string>com.apple.aelwriter</string>
+		<string>com.apple.photostream-agent</string>
+	</array>
+	<key>com.apple.security.temporary-exception.mach-lookup.global-name:before:10.8</key>
+	<array>
+		<string>com.apple.AOSNotification-FMM</string>
+	</array>
+	<key>com.apple.security.temporary-exception.sbpl</key>
+	<string>
+		(begin
+			(allow authorization-right-obtain (right-name "system.volume.external.mount"))
+			(allow authorization-right-obtain (right-name "system.volume.external.unmount"))
+			(deny network-outbound (with no-log)
+					(regex #"^/private/tmp/launch-"))
+			(allow file-ioctl
+					(literal "/dev/ptmx")
+					(literal "/dev/null")
+					(literal "/dev/tty")
+					(regex #"^/dev/ttys"))
+			(allow file-search)
+			(allow ipc-posix-sem)
+			(allow system-fsctl))
+	</string>
+	<key>com.apple.security.temporary-exception.shared-preference.read-only</key>
+	<array>
+		<string>com.apple.iPhoto</string>
+	</array>
+	<key>com.apple.security.temporary-exception.shared-preference.read-write</key>
+	<array>
+		<string>com.apple.Aperture</string>
+		<string>com.apple.iApps</string>
+		<string>com.apple.iLifePhotoStream</string>
+		<string>com.apple.iLifeAssetManagement.agent</string>
+		<string>com.apple.iLifeAssetManagement.crash</string>
+		<string>com.apple.iLifePhotoStream.importstatus</string>
+		<string>MobileMeAccounts</string>
+		<string>com.apple.ImageCapture2</string>
+		<string>com.apple.mcxprinting</string>
+	</array>
+</dict>
+</plist>
