@@ -4,6 +4,8 @@
 <dict>
 	<key>com.apple.application-identifier</key>
 	<string>F9L2L89K5X.com.apple.iPhoto</string>
+	<key>com.apple.developer.maps</key>
+	<true/>
 	<key>com.apple.private.icloud-account-access</key>
 	<true/>
 	<key>com.apple.security.app-sandbox</key>
@@ -37,33 +39,34 @@
 	<true/>
 	<key>com.apple.security.temporary-exception.apple-events</key>
 	<array>
-		<string>com.apple.iWeb</string>
-		<string>com.apple.idvd</string>
 		<string>com.apple.mail</string>
 		<string>com.microsoft.outlook</string>
 		<string>com.apple.itunes</string>
 	</array>
 	<key>com.apple.security.temporary-exception.files.absolute-path.read-write</key>
-	<string>/</string>
+	<array>
+		<string>/Library/Caches/com.apple.iPhoto/</string>
+		<string>/Library/Application Support/iPhoto/</string>
+	</array>
+	<key>com.apple.security.temporary-exception.files.home-relative-path.read-only</key>
+	<array>
+		<string>/Library/Mail/V2/MailData/Accounts.plist</string>
+		<string>/Library/Application Support/iPhoto/Plugins/</string>
+		<string>/Library/Application Support/iLifeAssetManagement/assets/</string>
+	</array>
+	<key>com.apple.security.temporary-exception.files.home-relative-path.read-write</key>
+	<array>
+		<string>/Library/Application Support/Aperture/</string>
+	</array>
 	<key>com.apple.security.temporary-exception.mach-lookup.global-name</key>
 	<array>
-		<string>com.apple.mDNSResponder</string>
+		<string>com.apple.pictd</string>
 		<string>com.apple.photostream-agent</string>
-		<string>com.apple.unmountassistant.useragent</string>
-	</array>
-	<key>com.apple.security.temporary-exception.mach-lookup.global-name:before:10.8</key>
-	<array>
-		<string>com.apple.AOSNotification-FMM</string>
-	</array>
-	<key>com.apple.security.temporary-exception.mach-lookup.local-name</key>
-	<array>
-		<string>com.apple.tsm.portname</string>
 	</array>
 	<key>com.apple.security.temporary-exception.sbpl</key>
 	<string>(begin
 		(allow file-search)
-		(allow system-fsctl)
-		(allow authorization-right-obtain (right-name "system.volume.removable.unmount")))
+		(allow system-fsctl))
 	</string>
 	<key>com.apple.security.temporary-exception.shared-preference.read-only</key>
 	<array>
@@ -78,9 +81,9 @@
 		<string>com.apple.iLifeAssetManagement.crash</string>
 		<string>com.apple.iLifePhotoStream.importstatus</string>
 		<string>MobileMeAccounts</string>
-		<string>com.apple.screensaver</string>
-		<string>com.apple.screensaver.slideshow</string>
 		<string>com.apple.ImageCapture2</string>
 	</array>
+	<key>com.apple.security.temporary-exception.yasb</key>
+	<true/>
 </dict>
 </plist>

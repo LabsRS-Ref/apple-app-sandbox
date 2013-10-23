@@ -4,6 +4,8 @@
 <dict>
 	<key>com.apple.application-identifier</key>
 	<string>F9L2L89K5X.com.apple.Aperture</string>
+	<key>com.apple.developer.maps</key>
+	<true/>
 	<key>com.apple.private.icloud-account-access</key>
 	<true/>
 	<key>com.apple.security.app-sandbox</key>
@@ -46,10 +48,6 @@
 	<array>
 		<string>com.apple.aelwriter</string>
 		<string>com.apple.photostream-agent</string>
-	</array>
-	<key>com.apple.security.temporary-exception.mach-lookup.global-name:before:10.8</key>
-	<array>
-		<string>com.apple.AOSNotification-FMM</string>
 	</array>
 	<key>com.apple.security.temporary-exception.sbpl</key>
 	<string>
