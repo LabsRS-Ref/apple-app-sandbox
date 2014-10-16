@@ -8,7 +8,7 @@
 	<array>
 		<string>com.apple.Pages</string>
 	</array>
-	<key>com.apple.private.icloud-account-access</key>
+	<key>com.apple.private.clouddocs.can-publish-iwork-document</key>
 	<true/>
 	<key>com.apple.security.app-sandbox</key>
 	<true/>
@@ -32,5 +32,11 @@
 	<string>/Library/Application Support/iWork/</string>
 	<key>com.apple.security.temporary-exception.mach-lookup.global-name</key>
 	<string>com.apple.iwork.pages.endNotePlugin-v2</string>
+	<key>com.apple.security.temporary-exception.shared-preference.read-only</key>
+	<array>
+		<string>com.ThomsonResearchSoft.EndNote</string>
+	</array>
+	<key>useractivity-team-identifier</key>
+	<string>appleiwork</string>
 </dict>
 </plist>
