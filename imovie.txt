@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.application-identifier</key>
+	<string>PTN9T2S29T.com.apple.iMovieApp</string>
+	<key>com.apple.developer.maps</key>
+	<true/>
+	<key>com.apple.developer.ubiquity-container-identifiers</key>
+	<array>
+		<string>F6266T9T75.com.apple.iMovie</string>
+	</array>
+	<key>com.apple.private.icloud-account-access</key>
+	<true/>
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
+	<key>com.apple.security.assets.movies.read-write</key>
+	<true/>
+	<key>com.apple.security.assets.music.read-only</key>
+	<true/>
+	<key>com.apple.security.assets.pictures.read-only</key>
+	<true/>
+	<key>com.apple.security.device.camera</key>
+	<true/>
+	<key>com.apple.security.device.microphone</key>
+	<true/>
+	<key>com.apple.security.device.usb</key>
+	<true/>
+	<key>com.apple.security.files.bookmarks.app-scope</key>
+	<true/>
+	<key>com.apple.security.files.user-selected.read-write</key>
+	<true/>
+	<key>com.apple.security.network.client</key>
+	<true/>
+	<key>com.apple.security.personal-information.addressbook</key>
+	<true/>
+	<key>com.apple.security.personal-information.location</key>
+	<true/>
+	<key>com.apple.security.temporary-exception.apple-events</key>
+	<array>
+		<string>com.apple.itunes</string>
+		<string>com.apple.mail</string>
+	</array>
+	<key>com.apple.security.temporary-exception.files.absolute-path.read-write</key>
+	<array>
+		<string>/</string>
+	</array>
+	<key>com.apple.security.temporary-exception.mach-lookup.global-name</key>
+	<array>
+		<string>com.apple.photostream-agent</string>
+	</array>
+	<key>com.apple.security.temporary-exception.sbpl</key>
+	<array>
+		<string>(allow network-outbound (literal "/private/var/run/usbmuxd"))</string>
+		<string>(allow distributed-notification-post)</string>
+		<string>(allow ipc-posix-shm-write-create)</string>
+		<string>(allow ipc-posix-shm-write-data)</string>
+		<string>(allow ipc-posix-shm-read-data)</string>
+		<string>(allow ipc-posix-shm-read-metadata)</string>
+		<string>(allow ipc-posix-shm-write-unlink)</string>
+	</array>
+	<key>com.apple.security.temporary-exception.shared-preference.read-only</key>
+	<array>
+		<string>com.apple.iLifePhotoStream</string>
+		<string>MobileMeAccounts</string>
+	</array>
+	<key>com.apple.security.temporary-exception.shared-preference.read-write</key>
+	<array>
+		<string>com.apple.iApps</string>
+	</array>
+</dict>
+</plist>
