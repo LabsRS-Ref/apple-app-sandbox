@@ -10,7 +10,9 @@
 		<string>F3LWYJ7GM7.com.apple.mobilegarageband</string>
 	</array>
 	<key>com.apple.developer.ubiquity-kvstore-identifier</key>
-	<string>F3LWYJ7GM7.com.apple.garageband10</string>
+	<string>F3LWYJ7GM7.com.apple.musicapps</string>
+	<key>com.apple.private.icloud-account-access</key>
+	<true/>
 	<key>com.apple.security.app-sandbox</key>
 	<true/>
 	<key>com.apple.security.assets.music.read-write</key>
@@ -29,6 +31,7 @@
 	<array>
 		<string>com.apple.itunes</string>
 		<string>com.apple.systempreferences</string>
+		<string>com.eLicenser.POS</string>
 	</array>
 	<key>com.apple.security.temporary-exception.audio-unit-host</key>
 	<true/>
@@ -40,10 +43,12 @@
 	<array>
 		<string>(allow iokit-open)</string>
 		<string>(allow iokit-set-properties (iokit-property "ConsoleUID"))</string>
+		<string>(allow mach-lookup (global-name "com.apple.AssetCacheLocatorService"))</string>
 	</array>
 	<key>com.apple.security.temporary-exception.shared-preference.read-only</key>
 	<array>
 		<string>com.apple.iApps</string>
+		<string>MobileMeAccounts</string>
 	</array>
 </dict>
 </plist>
