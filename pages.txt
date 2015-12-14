@@ -4,12 +4,33 @@
 <dict>
 	<key>com.apple.application-identifier</key>
 	<string>74J34U3R6X.com.apple.iWork.Pages</string>
+	<key>com.apple.developer.icloud-container-environment</key>
+	<string>Production</string>
+	<key>com.apple.developer.icloud-container-identifiers</key>
+	<array>
+		<string>com.apple.Pages</string>
+	</array>
+	<key>com.apple.developer.icloud-services</key>
+	<array>
+		<string>CloudKit</string>
+		<string>CloudDocuments</string>
+	</array>
 	<key>com.apple.developer.ubiquity-container-identifiers</key>
 	<array>
 		<string>com.apple.Pages</string>
 	</array>
+	<key>com.apple.developer.ubiquity-kvstore-identifier</key>
+	<string>com.apple.iWork</string>
 	<key>com.apple.private.clouddocs.can-publish-iwork-document</key>
 	<true/>
+	<key>com.apple.private.clouddocs.sharing-proxy</key>
+	<true/>
+	<key>com.apple.private.clouddocs.sharing.private-interface</key>
+	<true/>
+	<key>com.apple.private.tcc.allow</key>
+	<array>
+		<string>kTCCServiceAddressBook</string>
+	</array>
 	<key>com.apple.security.app-sandbox</key>
 	<true/>
 	<key>com.apple.security.assets.movies.read-only</key>
