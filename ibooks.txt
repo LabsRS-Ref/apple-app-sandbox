@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.application-identifier</key>
+	<string>com.apple.iBooksX</string>
+	<key>com.apple.authkit.client.internal</key>
+	<true/>
+	<key>com.apple.developer.notificationcenter-identifiers</key>
+	<array>
+		<string>com.apple.ibooks</string>
+	</array>
+	<key>com.apple.private.bookkit</key>
+	<true/>
+	<key>com.apple.private.commercekit.bookstore</key>
+	<true/>
+	<key>com.apple.private.lookup.use-inactive-dictionaries</key>
+	<true/>
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
+	<key>com.apple.security.assets.music.read-write</key>
+	<true/>
+	<key>com.apple.security.device.camera</key>
+	<true/>
+	<key>com.apple.security.files.user-selected.read-write</key>
+	<true/>
+	<key>com.apple.security.network.client</key>
+	<true/>
+	<key>com.apple.security.temporary-exception.files.absolute-path.read-only</key>
+	<array>
+		<string>/Users/Shared/SC Info/</string>
+		<string>/Library/Preferences/com.apple.commerce.plist</string>
+		<string>/Library/Preferences/com.apple.iTunes.secure.plist</string>
+		<string>/Library/Preferences/com.apple.usbmuxd.plist</string>
+		<string>/Library/Preferences/com.apple.iBooksX.secure.plist</string>
+	</array>
+	<key>com.apple.security.temporary-exception.mach-lookup.global-name</key>
+	<array>
+		<string>com.apple.bookstoreagent-xpc</string>
+		<string>com.apple.maspushagent-xpc</string>
+		<string>com.apple.familycircle.agent</string>
+		<string>com.apple.ak.auth.xpc</string>
+		<string>com.apple.storeaccountd</string>
+		<string>com.apple.storeassetd</string>
+		<string>com.apple.storedownloadd</string>
+		<string>com.apple.storeuid</string>
+		<string>com.apple.askpermissiond</string>
+	</array>
+	<key>com.apple.security.temporary-exception.sbpl</key>
+	<array>
+		<string>
+                (allow mach-issue-extension
+                (require-all (extension-class "com.apple.app-sandbox.mach")
+                (require-any
+                (global-name "com.apple.askpermissiond")
+                (global-name "com.apple.familycircle.agent")
+                (global-name "com.apple.storeaccountd")
+                (global-name "com.apple.storeassetd")
+                (global-name "com.apple.storedownloadd")
+                (global-name "com.apple.storeuid")
+                (global-name "com.apple.bookstoreagent-xpc")
+                (global-name "com.apple.storehelper")
+                (global-name "com.apple.CKSignInPrompt.hostclient")
+                (global-name "com.apple.pbs.fetch_services")
+                (global-name "com.apple.cfnetwork.cfnetworkagent")
+				(global-name "com.apple.CKSignInPrompt.hostclient")
+				(global-name "com.apple.storehelper"))))
+            </string>
+		<string>
+                (read-write-and-issue-extensions
+                (require-any
+                (home-literal "/Library/Preferences/com.apple.commerce.plist")
+                (home-literal "/Library/Logs/appstore.log")))
+            </string>
+		<string>
+                (read-only-and-issue-extensions
+                (require-any
+                (literal "/Library/Preferences/SystemConfiguration/preferences.plist")
+                (home-literal "/Library/Preferences/com.apple.iTunes.plist")
+                (home-literal "/Library/Preferences/pbs.plist")
+                (literal "/Library/Caches/com.apple.DiagnosticReporting.Networks.plist")
+                (literal "/Library/Preferences/com.apple.commerce.plist")
+                (regex #"^/private/var/folders/[a-z0-9]+/[a-z0-9_]+/[A-Z]/com\.apple\.WebProcess\+com\.apple\.appstore/")))
+            </string>
+		<string>(allow distributed-notification-post)</string>
+		<string>(allow authorization-right-obtain (right-name "com.apple.iBooksX.ParentalControl"))</string>
+		<string>(allow network-outbound (literal "/private/var/run/usbmuxd"))</string>
+	</array>
+	<key>com.apple.security.temporary-exception.shared-preference.read-only</key>
+	<array>
+		<string>com.apple.iTunes</string>
+		<string>com.apple.commerce.plist</string>
+	</array>
+	<key>com.apple.security.temporary-exception.shared-preference.read-write</key>
+	<array>
+		<string>com.apple.bookstoreagent</string>
+	</array>
+</dict>
+</plist>
